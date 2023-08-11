@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ZZikMuk</string>
+    <string name="saved">Saved</string>
+    <string name="image">Image</string>
+    <string name="hint_search">Search</string>
+    <string name="add_materials">Raw material name</string>
+    <string name="group">Group</string>
+    <string name="personalized">Personalized</string>
+
+</resources>

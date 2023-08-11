@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BtnPage"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/pyeongchang"
+        android:text="찍먹"
+        android:textColor="#252525"
+        android:textSize="100dp" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="성분등록"
+        android:drawableLeft="@drawable/plus_"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:background="@drawable/button_radius"
+        android:fontFamily="@font/v09_ttf"
+        />
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="28dp"
+        android:text="식품검색"
+        android:drawableLeft="@drawable/search_"
+        android:fontFamily="@font/v09_ttf"
+        android:background="@drawable/button_radius"
+        />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_radius"
+        android:drawableLeft="@drawable/layer_list_barcode"
+        android:fontFamily="@font/v09_ttf"
+        android:onClick="moveButton"
+        android:text="바코드"
+        android:textSize="28dp"
+        tools:ignore="OnClick" />
+</LinearLayout>

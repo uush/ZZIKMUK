@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/LyTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_view"
+            style="@style/SearchViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="12"
+            android:hint="@string/add_materials"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/material_add"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_round_add"
+            app:tint="@color/color_gray" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cstLyMid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LyTop">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/personalized"
+                style="@style/TagViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:text="@string/personalized"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/Group"
+                style="@style/TextViewHeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_gray"
+                android:text="@string/group" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cstLyMid"
+        app:spanCount="1"
+        tools:itemCount="20"
+        tools:listitem="@layout/list_row_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="품목명으로 검색"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="search"
+            android:textSize="12sp"
+            android:onClick="mOnClick"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="바코드 번호로 검색"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="search"
+            android:textSize="12sp"
+            android:onClick="mOnClick1"/>
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="바코드 스캔"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </ScrollView>
+</LinearLayout>

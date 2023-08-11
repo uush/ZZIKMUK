@@ -1,0 +1,57 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:paddingTop="1dp"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/mat_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            style="@style/RawMaterial_item"
+            />
+
+
+        <Switch
+            android:id="@+id/mat_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/bt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/edit_icon"/>
+
+        <ImageView
+            android:id="@+id/bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/delete"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--</&#45;&#45;layout>-->
